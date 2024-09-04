@@ -1,8 +1,8 @@
 {
   "name": "wergh/remote-api-login",
   "description": "A Laravel package to login against Laragel api without a login form in the device",
-  "minimum-stability": "stable",
   "type": "library",
+  "version": "0.1.0",
   "license": "MIT",
   "authors": [
     {
