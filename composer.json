@@ -1,0 +1,40 @@
+{
+  "name": "wergh/remote-api-login",
+  "description": "A Laravel package to login against Laragel api without a login form in the device",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Carlos López",
+      "email": "carlos.cousillas@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.0|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wergh\\RemoteApiLogin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wergh\\RemoteApiLogin\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wergh\\RemoteApiLogin\\Providers\\RemoteApiLoginServiceProvider"
+      ],
+      "aliases": {
+        "RemoteApiLogin": "Wergh\\RemoteApiLogin\\Facades\\RemoteApiLogin"
+      }
+    }
+  }
+}
