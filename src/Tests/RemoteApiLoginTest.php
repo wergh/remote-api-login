@@ -3,7 +3,7 @@
 namespace Wergh\RemoteApiLogin\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Wergh\RemoteApiLogin\RemoteApiLoginServiceProvider;
+use Wergh\RemoteApiLogin\Providers\RemoteApiLoginServiceProvider;
 
 class RemoteApiLoginTest extends TestCase
 {
