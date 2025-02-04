@@ -34,7 +34,13 @@ This will install the package and its dependencies.
 Once installed, publish the configuration file to customize the package’s settings:
 
 ```sh
-php artisan vendor:publish --provider="Wergh\RemoteApiLogin\RemoteApiLoginServiceProvider" --tag="remote-api-login-config"
+php artisan vendor:publish --tag="remote-api-login-config"
+```
+
+After publishing the configuration, it is necessary to run the migrations. However, before doing so, please make sure to modify the database table name for the package if you wish to do so.
+
+```sh
+php artisan migrate
 ```
 
 ## How It Works

@@ -36,7 +36,7 @@ class RemoteApiLoginSendLoginSuccessfullEvent implements ShouldBroadcast
 
     public function broadcastOn(): Channel
     {
-        return new Channel(Config::get('remote-api-login.channel_socket_name').$this->apiLoginInstance->uuid);
+        return new Channel(Config::get('remote-api-login.channel_socket_name').'.'.$this->apiLoginInstance->uuid);
     }
 
     /**
