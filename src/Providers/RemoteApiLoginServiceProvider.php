@@ -15,9 +15,7 @@ class RemoteApiLoginServiceProvider extends ServiceProvider
             __DIR__.'/../config/remote-api-login.php' => config_path('remote-api-login.php'),
         ], 'remote-api-login-config');
 
-        $this->publishesMigrations([
-            __DIR__.'/../database/migrations' => database_path('migrations'),
-        ]);
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 
