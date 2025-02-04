@@ -92,14 +92,6 @@ For custom authentication systems, you can specify in the configuration which cl
 
 ## Configuration
 
-Below is the list of configuration options available:
-
-¡Perfecto! Aquí tienes la tabla de configuración con los valores por defecto que me has proporcionado, en inglés:
-
----
-
-## Configuration
-
 Below is the list of configuration options available and their descriptions, along with their default values:
 
 | Option | Description | Default |

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd572a64-dfeb-4b6a-901d-4a8954a23fd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Events/RemoteApiLoginSendLoginSuccessfullEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/RemoteApiLoginSendLoginSuccessfullEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/remote-api-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/remote-api-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/migrations/2024_09_04_152502_create_table_remote_api_login_auth_requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2024_09_04_152502_create_table_remote_api_login_auth_requests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +198,7 @@
       <workItem from="1726484111641" duration="1142000" />
       <workItem from="1726669438936" duration="617000" />
       <workItem from="1738490813959" duration="2561000" />
-      <workItem from="1738669608580" duration="3267000" />
+      <workItem from="1738669608580" duration="3506000" />
     </task>
     <servers />
   </component>
