@@ -117,9 +117,6 @@ Below is the list of configuration options available and their descriptions, alo
 | `access_token_expiration_time` | **Expiration time** for the `access_token` in Passport. This field is needed to calculate the `expires_in` value. | - |
 | `refresh_token_expiration_time` | **Validity time** for the `refresh_token` in Passport. Defines how long the `refresh_token` will remain valid. | - |
 
-
-Perfecto, voy a agregar la sección del evento en el README. Aquí está la descripción:
-
 ---
 
 ### The Event
