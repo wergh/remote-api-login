@@ -196,8 +196,6 @@ In this example, Pusher is used for the WebSocket connection. To use Pusher, you
 
 However, if you prefer to use **Reverb** or your own custom WebSocket system, the package is fully compatible with those as well.
 
-Perfecto, aquí tienes la sección final con la licencia y la firma añadidas:
-
 ---
 
 ### License
