@@ -125,6 +125,8 @@ To ensure the package works as expected, you need to trigger the following event
 You can trigger the event as follows:
 
 ```php
+use Wergh\RemoteApiLogin\Events\RemoteApiLoginSendLoginSuccessfullEvent;
+
 broadcast(new RemoteApiLoginSendLoginSuccessfullEvent($authenticableInstance, $code));
 ```
 
