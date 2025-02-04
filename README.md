@@ -143,8 +143,6 @@ Where:
 
 This event notifies the system that the user has successfully logged in, and the device can proceed with obtaining the authentication token.
 
-¡Genial! Aquí tienes ambas secciones, el **Troubleshooting** y los **Ejemplos funcionales**, para que las agregues al README:
-
 ---
 
 ### Troubleshooting
@@ -178,6 +176,10 @@ If the token isn’t returned after a successful login, verify that:
 
 If your device is not receiving the WebSocket event, check the following:
 
+- Ensure the queues are working the php artisan command
+  ```sh
+  php artisan queue:work
+  ```
 - Ensure the `RemoteApiLoginSendLoginSuccessfullEvent` event is correctly dispatched on the backend.
 - Verify that the WebSocket channel name and event name match those configured in the backend and frontend.
 - Confirm that the broadcasting service (e.g., Pusher, Reverb) is working and your keys are correctly set up.
