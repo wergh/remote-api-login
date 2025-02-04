@@ -66,7 +66,7 @@ return [
      * |--------------------------------------------------------------------------
      * | API authentication driver
      * |--------------------------------------------------------------------------
-     * | The library can work with the two standard Laravel libraries (Passport or
+     * | The package can work with the two standard Laravel libraries (Passport or
      * | Sanctum) or, if you use another library or even a custom method, you can
      * | choose the 'custom' system. If you choose 'custom', you must uncomment
      * | the 'class' and 'method' lines and specify the class and method that the

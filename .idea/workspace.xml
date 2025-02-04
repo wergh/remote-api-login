@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cd572a64-dfeb-4b6a-901d-4a8954a23fd1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/RemoteApiLoginSendLoginSuccessfullEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/RemoteApiLoginSendLoginSuccessfullEvent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/remote-api-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/remote-api-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/migrations/2024_09_04_152502_create_table_remote_api_login_auth_requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/migrations/2024_09_04_152502_create_table_remote_api_login_auth_requests.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,16 +164,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Trabajo/remote-api-login/src/routes",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Trabajo/remote-api-login/src/routes&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Trabajo\remote-api-login\src\routes" />
@@ -199,6 +202,7 @@
       <workItem from="1726484111641" duration="1142000" />
       <workItem from="1726669438936" duration="617000" />
       <workItem from="1738490813959" duration="2561000" />
+      <workItem from="1738669608580" duration="3267000" />
     </task>
     <servers />
   </component>

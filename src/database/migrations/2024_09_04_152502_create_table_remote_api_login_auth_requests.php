@@ -27,6 +27,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('ral_request_data');
+        Schema::dropIfExists(Config::get('remote-api-login.table_name'));
     }
 };

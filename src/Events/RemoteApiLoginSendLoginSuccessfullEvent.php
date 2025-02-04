@@ -7,6 +7,7 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Config;
 use Wergh\RemoteApiLogin\Entities\RemoteApiLogin;
 
 class RemoteApiLoginSendLoginSuccessfullEvent implements ShouldBroadcast
@@ -35,7 +36,7 @@ class RemoteApiLoginSendLoginSuccessfullEvent implements ShouldBroadcast
 
     public function broadcastOn(): Channel
     {
-        return new Channel('remote-login.'.$this->apiLoginInstance->uuid);
+        return new Channel(Config::get('remote-api-login.channel_socket_name').$this->apiLoginInstance->uuid);
     }
 
     /**
@@ -45,7 +46,7 @@ class RemoteApiLoginSendLoginSuccessfullEvent implements ShouldBroadcast
      */
     public function broadcastAs()
     {
-        return 'LoginSuccessfully';
+        return Config::get('remote-api-login.broadcast_event');
     }
 
     public function broadcastWith(): array
