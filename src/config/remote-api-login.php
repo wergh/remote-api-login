@@ -45,8 +45,8 @@ return [
      * | These fields specify the URLs used for the login request and token
      * | retrieval. You can configure them according to your application's routes.
      */
-    'request_url' => env('APP_URL').'/api/login-request',
-    'token_url' => env('APP_URL').'/api/get-token',
+    'request_url' => 'api/login-request',
+    'token_url' => '/api/get-token',
 
     /*
      * |--------------------------------------------------------------------------
