@@ -85,6 +85,12 @@ broadcast(new RemoteApiLoginSendLoginSuccessfullEvent($authenticableInstance, $c
 
 Since not all applications use Laravel’s default `User` model for authentication, the package is designed to support authentication via any entity in your application.
 
+Remember the queues must be working!
+
+```sh
+php artisan queue:work
+```
+
 ### 6. Notifying the Device via WebSocket
 
 The package will now associate the **code** with the authenticated user and notify the corresponding device via WebSocket that the authentication process is complete. The device will receive an event through its subscribed channel, indicating it can now retrieve the authentication token.
