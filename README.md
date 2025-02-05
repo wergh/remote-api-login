@@ -77,6 +77,12 @@ With Laravel Socialite, you can easily implement authentication via external pro
 
 After authentication—whether via Laravel or an external provider—you will now have a logged-in user along with the **login code** they used. At this point, it's time for the package to take over. Simply dispatch the package’s built-in event, passing in the code and the authenticated user instance.
 
+```php
+use Wergh\RemoteApiLogin\Events\RemoteApiLoginSendLoginSuccessfullEvent;
+
+broadcast(new RemoteApiLoginSendLoginSuccessfullEvent($authenticableInstance, $code));
+```
+
 Since not all applications use Laravel’s default `User` model for authentication, the package is designed to support authentication via any entity in your application.
 
 ### 6. Notifying the Device via WebSocket
@@ -192,6 +198,10 @@ A **functional example** is provided to see the package working in real-time. Th
 In this example, Pusher is used for the WebSocket connection. To use Pusher, you need to sign up on the [Pusher website](https://pusher.com/) and create an application to obtain your API keys. Pusher offers a generous free tier, so there won’t be any cost involved for most use cases.
 
 However, if you prefer to use **Reverb** or your own custom WebSocket system, the package is fully compatible with those as well.
+
+[Laravel fresh installation](https://github.com/wergh/laravel-remote-api-login-example)
+
+[Frontend acting as external device](https://github.com/wergh/frontend-remote-api-login)
 
 ---
 

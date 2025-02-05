@@ -24,7 +24,7 @@ use Illuminate\Support\Str;
 class RemoteApiLogin extends Model
 {
 
-    public $table = 'ral_request_data';
+    protected $table;
 
     public $fillable = [
         'uuid',
@@ -37,6 +37,18 @@ class RemoteApiLogin extends Model
         'code' => 'string',
         'token' => 'string',
     ];
+
+    /**
+     * Create a new model instance.
+     *
+     * @return void
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->table = Config::get('remote-api-login.table_name');
+    }
 
 
     public static function newData(): array
