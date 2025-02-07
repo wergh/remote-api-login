@@ -1,5 +1,20 @@
 # Laravel Remote API Login
 
+## Index
+
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [How it works](#how-it-works)
+- [Configuration](#configuration)
+- [The Event](#the-event)
+- [Troubleshooting](#troubleshooting)
+- [Examples](#functional-examples)
+- [Licence](#license)
+- [Feedback and contributions](#feedback-and-contributions)
+
+
+## Introduction
 Welcome to the documentation for Laravel Remote API Login, a package designed for Laravel that provides a new authentication method via API for your applications against a Laravel backend.
 
 ## Purpose of the Package
@@ -151,6 +166,12 @@ Where:
 - **`$code`**: The code that the user entered when logging in.
 
 This event notifies the system that the user has successfully logged in, and the device can proceed with obtaining the authentication token.
+
+Remember, queues must be working
+
+  ```sh
+  php artisan queue:work
+  ```
 
 ---
 
